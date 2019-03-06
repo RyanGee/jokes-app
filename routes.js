@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const createJoke = require('./jokes/create-joke');
-
-console.log(createJoke);
+const getJokes = require('./jokes/get-jokes');
 
 //test response
 router.get('/', function(req, res){
@@ -12,5 +11,7 @@ router.get('/', function(req, res){
 
 router.route('/create')
 	.post(createJoke.create);
+router.route('/list')
+	.get(getJokes.list)
 
 module.exports = router;
