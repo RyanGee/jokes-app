@@ -3,6 +3,7 @@ const createJoke = require('./jokes/create-joke');
 const getJokes = require('./jokes/get-jokes');
 const getJoke = require('./jokes/get-joke-by-id');
 const updateJoke = require('./jokes/update-joke');
+const deleteJoke = require('./jokes/delete-joke');
 
 //test response
 router.get('/', function(req, res){
@@ -19,6 +20,7 @@ router.route('/list')
 router.route('/:joke_id')
 	.get(getJoke.view)
 	.patch(updateJoke.update)
-	.put(updateJoke.update);
+	.put(updateJoke.update)
+	.delete(deleteJoke.delete);
 
 module.exports = router;
