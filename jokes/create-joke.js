@@ -7,6 +7,7 @@ module.exports.create = function (req, res) {
         if (err) {
 			res.json(err);
 		}
+        res.status(201);
 		res.json({
             message: 'New joke created!',
             data: joke
