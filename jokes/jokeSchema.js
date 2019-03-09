@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var jokeSchema = mongoose.Schema({
+const jokeSchema = mongoose.Schema({
     joke: {
         type: String,
         required: true
@@ -11,7 +11,8 @@ var jokeSchema = mongoose.Schema({
     }
 });
 
-var Joke = module.exports = mongoose.model('joke', jokeSchema);
+const Joke = module.exports = mongoose.model('joke', jokeSchema);
+
 module.exports.get = function (callback, limit) {
     Joke.find(callback).limit(limit);
 }
