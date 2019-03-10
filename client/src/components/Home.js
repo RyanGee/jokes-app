@@ -9,8 +9,12 @@ class Home extends Component {
     	const {isAuthenticated} = this.props.auth;
     	const authPage = (
             <div className="container">
-            	<JokeForm />
-            	<JokesList />
+            	<div className="jumbotron">
+            		<JokeForm />
+            	</div>
+            	<div className="jumbotron">
+            		<JokesList />
+        		</div>
             </div>
         )
       const guestPage = (

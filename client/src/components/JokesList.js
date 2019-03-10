@@ -13,7 +13,7 @@ class JokesList extends Component {
             return Object.entries(obj.jokes);
         }
         return (
-            <div>
+            <div className="list-group">
                 <h1>All Jokes</h1>
                 {listProps(this.props.jokes).map((post) => {
                     return <Joke key={post[0]} id={post[0]} joke={post[1]} />

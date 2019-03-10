@@ -15,9 +15,13 @@ class JokeForm extends Component {
 			<div>
 				<h1>Create Joke</h1>
 				<form onSubmit={this.handleSubmit}>
-					<input required type="text" ref={(input)=>this.getJoke = input}
-					placeholder="Enter Joke"/>
-					<button>Create</button>
+					<div className="form-group">
+						<input required type="text" className="form-control" ref={(input)=>this.getJoke = input}
+						placeholder="Enter Joke"/>
+					</div>
+					<div class="form-group">
+						<button className="btn btn-primary">Create</button>
+					</div>
 				</form>
 			</div>
 		);

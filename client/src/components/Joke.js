@@ -10,9 +10,10 @@ class Joke extends Component {
 	}
 	render() {
 		return (
-			<div>
-				<p>{this.props.joke}</p>
+			<div className="d-flex justify-content-between list-group-item mb-1">
+				{this.props.joke}
 				<button
+					className="btn btn-danger"
 					onClick={this.handleDelete}>
 					Delete
 				</button>
