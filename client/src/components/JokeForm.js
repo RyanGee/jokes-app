@@ -19,7 +19,7 @@ class JokeForm extends Component {
 						<input required type="text" className="form-control" ref={(input)=>this.getJoke = input}
 						placeholder="Enter Joke"/>
 					</div>
-					<div class="form-group">
+					<div className="form-group">
 						<button className="btn btn-primary">Create</button>
 					</div>
 				</form>
