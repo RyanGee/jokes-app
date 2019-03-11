@@ -1,4 +1,4 @@
-#PREREQUISITES
+# PREREQUISITES
 To run this project, you will need Node/npm and Mongo installed
 
 # Instructions
